@@ -1,26 +1,14 @@
 -- Databricks notebook source
--- MAGIC %md
--- MAGIC Objectif :
--- MAGIC
--- MAGIC - nettoyer les données
--- MAGIC - supprimer les colonnes inutiles
--- MAGIC - créer la table Silver
+-- Objectif :
+-- nettoyer les données
+-- supprimer les colonnes inutiles
+-- créer la table Silver
 
--- COMMAND ----------
-
--- MAGIC %md
--- MAGIC ## Création du schema Silver
-
--- COMMAND ----------
+-- ## Création du schema Silver
 
 CREATE SCHEMA IF NOT EXISTS insurance_catalog.silver;
 
--- COMMAND ----------
-
--- MAGIC %md
--- MAGIC ## Création de la table nettoyée
-
--- COMMAND ----------
+-- ## Création de la table nettoyée
 
 CREATE OR REPLACE TABLE insurance_catalog.silver.insurance_claims_clean AS
 
