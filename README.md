@@ -107,7 +107,6 @@ Exemples de variables :
 | policy_start_date | date de début de la police |
 
 
-
 ## 6. Architecture Medallion
 
 Le pipeline suit l’architecture Medallion.
@@ -241,6 +240,8 @@ dim_location ─ fact_policy ─ dim_policy
 
 Diagramme du modèle :
 
+![schema](images/star_schema.png)
+
 ## 10. Dashboard Power BI
 
 Un dashboard interactif a été créé pour analyser les données.
@@ -257,7 +258,7 @@ Pages du dashboard :
 
 3. Risk & Credit Analysis
 
-![Risk & Credit](images/risk_analysis.png)
+![Risk & Credit](images/risk&credit_analysis.png)
 
 4. Policy Performance
 
@@ -273,3 +274,4 @@ Ce projet démontre la capacité à concevoir une architecture Lakehouse, transf
 - ingestion continue des données
 - ajout de modèles Machine Learning pour le scoring de risque
 - déploiement du dashboard dans Power BI Service
+
