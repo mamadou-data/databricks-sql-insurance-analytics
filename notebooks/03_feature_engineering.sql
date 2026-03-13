@@ -1,16 +1,9 @@
 -- Databricks notebook source
--- MAGIC %md
 -- MAGIC Objectif :
--- MAGIC
--- MAGIC - créer des variables analytiques
+-- créer des variables analytiques
 -- MAGIC - segmentation client
 
--- COMMAND ----------
-
--- MAGIC %md
--- MAGIC ## Catégoriser l’âge
-
--- COMMAND ----------
+--## Catégoriser l’âge
 
 SELECT
 customer_id,
@@ -24,17 +17,9 @@ END AS age_group
 
 FROM insurance_catalog.silver.insurance_claims_clean;
 
--- COMMAND ----------
+-- CASE WHEN équivalent de "if / else"
 
--- MAGIC %md
--- MAGIC CASE WHEN équivalent de "if / else"
-
--- COMMAND ----------
-
--- MAGIC %md
--- MAGIC ## Ratio prime / couverture
-
--- COMMAND ----------
+-- ## Ratio prime / couverture
 
 SELECT
 customer_id,
@@ -45,7 +30,4 @@ premium_amount / coverage_amount AS premium_ratio
 
 FROM insurance_catalog.silver.insurance_claims_clean;
 
--- COMMAND ----------
-
--- MAGIC %md
--- MAGIC On crée une nouvelle métrique analytique.
+-- On crée une nouvelle métrique analytique.
